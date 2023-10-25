@@ -1,0 +1,39 @@
+.first {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background-color: #0052ba;
+    height: 100%;
+    /* justify-content: space-around; */
+
+    /*全屏*/
+    position: fixed;
+}
+
+
+#photo {
+    visibility: hidden;
+    filter: grayscale(100%);
+}
+
+#photo img {
+    /*图片缩放*/
+    width: 50vh;
+}
+
+
+/*  */
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    font-size: 10vw;
+    font-weight: 900;
+    color: aliceblue;
+    /*最上层*/
+    z-index: 1;
+    /*透明度*/
+    opacity: 0.8;
+
+}
