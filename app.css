@@ -1,14 +1,19 @@
 body {
     background-color: #0052ba;
+    /* 隐藏滚动条*/
+    overflow: hidden;
 }
 
 .first {
+    position: fixed;
     display: flex;
     gap: 16px;
     align-items: center;
+    /* justify-content: center; */
 }
 
-.grow1 {
+
+.first .grow1 {
     flex-grow: 1;
 }
 
@@ -17,16 +22,18 @@ body {
     filter: grayscale(100%);
     /* 放大图片*/
     transform: scale(2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 #photo img {
-    /*图片缩放*/
     width: 50vh;
 }
 
 
 /*  */
-.name {
+.first .name {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -39,4 +46,17 @@ body {
     /*透明度*/
     opacity: 0.8;
 
+}
+
+
+#two {
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#two img {
+    filter: grayscale(100%);
+    transform: scale(4);
 }

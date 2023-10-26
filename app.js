@@ -7,5 +7,10 @@ tl_1.to(".name", {
         document.getElementById("photo").style.visibility = "visible";
     }
 });
-tl_1.to(".photo", { duration: 0.8 });
-// tl_1.to(".photo", { transform: "scale(2)", duration: 0.2 });
+tl_1.add(gsap.delayedCall(0.5, () => {
+    document.getElementById("first").style.display = "none";
+    document.getElementById("two").style.display = "flex";
+
+    // document.getElementById("photo").style.scale = 4;
+}));
+tl_1.to("#two img", { scale: 2, duration: 1 });
