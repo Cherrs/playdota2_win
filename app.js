@@ -13,4 +13,4 @@ tl_1.add(gsap.delayedCall(0.5, () => {
 
     // document.getElementById("photo").style.scale = 4;
 }));
-tl_1.to("#two img", { scale: 2, duration: 1 });
+tl_1.to("#two img", { scale: 1.5, duration: 1 });

@@ -51,12 +51,14 @@ body {
 
 #two {
     gap: 16px;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    /* justify-content: center; */
     display: none;
 }
 
 #two img {
     filter: grayscale(100%);
     transform: scale(4);
+    margin-left: 15vh;
+    width: 50vh;
 }
